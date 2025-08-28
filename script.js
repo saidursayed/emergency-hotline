@@ -78,7 +78,7 @@ document.getElementById("call-button-1").addEventListener("click", function(){
     for(const callData of callHistoryData){
         const div = document.createElement("div")
         div.innerHTML = `
-            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 px-1 mb-2">
+            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 sm:px-1 px-4 mb-2">
                 <div>
                     <h4 class="text-[#111111]">${callData.name}</h4>
                     <p class="text-[#5c5c5c]">${callData.number}</p>
@@ -119,7 +119,7 @@ document.getElementById("call-button-2").addEventListener("click", function(){
     for(const callData of callHistoryData){
         const div = document.createElement("div")
         div.innerHTML = `
-            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 px-1 mb-2">
+            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 sm:px-1 px-4 mb-2">
                 <div>
                     <h4 class="text-[#111111]">${callData.name}</h4>
                     <p class="text-[#5c5c5c]">${callData.number}</p>
@@ -160,7 +160,7 @@ document.getElementById("call-button-3").addEventListener("click", function(){
     for(const callData of callHistoryData){
         const div = document.createElement("div")
         div.innerHTML = `
-            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 px-1 mb-2">
+            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 sm:px-1 px-4 mb-2">
                 <div>
                     <h4 class="text-[#111111]">${callData.name}</h4>
                     <p class="text-[#5c5c5c]">${callData.number}</p>
@@ -201,7 +201,7 @@ document.getElementById("call-button-4").addEventListener("click", function(){
     for(const callData of callHistoryData){
         const div = document.createElement("div")
         div.innerHTML = `
-            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 px-1 mb-2">
+            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 sm:px-1 px-4 mb-2">
                 <div>
                     <h4 class="text-[#111111]">${callData.name}</h4>
                     <p class="text-[#5c5c5c]">${callData.number}</p>
@@ -242,7 +242,7 @@ document.getElementById("call-button-5").addEventListener("click", function(){
     for(const callData of callHistoryData){
         const div = document.createElement("div")
         div.innerHTML = `
-            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 px-1 mb-2">
+            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 sm:px-1 px-4 mb-2">
                 <div>
                     <h4 class="text-[#111111]">${callData.name}</h4>
                     <p class="text-[#5c5c5c]">${callData.number}</p>
@@ -283,7 +283,7 @@ document.getElementById("call-button-6").addEventListener("click", function(){
     for(const callData of callHistoryData){
         const div = document.createElement("div")
         div.innerHTML = `
-            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 px-1 mb-2">
+            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 sm:px-1 px-4 mb-2">
                 <div>
                     <h4 class="text-[#111111]">${callData.name}</h4>
                     <p class="text-[#5c5c5c]">${callData.number}</p>
@@ -324,7 +324,7 @@ document.getElementById("call-button-7").addEventListener("click", function(){
     for(const callData of callHistoryData){
         const div = document.createElement("div")
         div.innerHTML = `
-            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 px-1 mb-2">
+            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 sm:px-1 px-4 mb-2">
                 <div>
                     <h4 class="text-[#111111]">${callData.name}</h4>
                     <p class="text-[#5c5c5c]">${callData.number}</p>
@@ -365,7 +365,7 @@ document.getElementById("call-button-8").addEventListener("click", function(){
     for(const callData of callHistoryData){
         const div = document.createElement("div")
         div.innerHTML = `
-            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 px-1 mb-2">
+            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 sm:px-1 px-4 mb-2">
                 <div>
                     <h4 class="text-[#111111]">${callData.name}</h4>
                     <p class="text-[#5c5c5c]">${callData.number}</p>
@@ -406,7 +406,7 @@ document.getElementById("call-button-9").addEventListener("click", function(){
     for(const callData of callHistoryData){
         const div = document.createElement("div")
         div.innerHTML = `
-            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 px-1 mb-2">
+            <div class="flex items-center justify-between rounded-lg bg-[#fafafa] py-4 sm:px-1 px-4 mb-2">
                 <div>
                     <h4 class="text-[#111111]">${callData.name}</h4>
                     <p class="text-[#5c5c5c]">${callData.number}</p>
