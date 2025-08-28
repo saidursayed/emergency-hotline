@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Copy Demo</title>
+</head>
+<body>
+
+  <h1 id="myText">Hello World</h1>
+  <button id="copyBtn">Copy</button>
+
+  <script>
+    // বোতামকে ধরলাম
+    const btn = document.getElementById("copyBtn");
+
+    // বোতামে ক্লিক ইভেন্ট
+    btn.addEventListener("click", () => {
+      const text = document.getElementById("myText").innerText; // h1 এর টেক্সট
+
+      // Clipboard এ টেক্সট কপি করব
+      navigator.clipboard.writeText(text)
+        .then(() => {
+          alert("✅ টেক্সট কপি হয়েছে: " + text);
+        })
+        .catch(err => {
+          alert("❌ কপি করা যায়নি!");
+          console.error(err);
+        });
+    });
+  </script>
+
+</body>
+</html>

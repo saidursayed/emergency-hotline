@@ -1,36 +1,36 @@
 // Clicking on the 💗 heart icon of any card will increase the count in the Navbar
-function getHeartIconClickCountNumber(id){
+function heartIconClickCountNumber(id){
     const heartCountNumberElement = parseInt(document.getElementById(id).innerText)
     const heartCountNumber = heartCountNumberElement + 1
     document.getElementById(id).innerText = heartCountNumber
 }
 
 document.getElementById("heart-icon-1").addEventListener("click", function(){
-    getHeartIconClickCountNumber("heart-count")
+    heartIconClickCountNumber("heart-count")
 })
 document.getElementById("heart-icon-2").addEventListener("click", function(){
-    getHeartIconClickCountNumber("heart-count")
+    heartIconClickCountNumber("heart-count")
 })
 document.getElementById("heart-icon-3").addEventListener("click", function(){
-    getHeartIconClickCountNumber("heart-count")
+    heartIconClickCountNumber("heart-count")
 })
 document.getElementById("heart-icon-4").addEventListener("click", function(){
-    getHeartIconClickCountNumber("heart-count")
+    heartIconClickCountNumber("heart-count")
 })
 document.getElementById("heart-icon-5").addEventListener("click", function(){
-    getHeartIconClickCountNumber("heart-count")
+    heartIconClickCountNumber("heart-count")
 })
 document.getElementById("heart-icon-6").addEventListener("click", function(){
-    getHeartIconClickCountNumber("heart-count")
+    heartIconClickCountNumber("heart-count")
 })
 document.getElementById("heart-icon-7").addEventListener("click", function(){
-    getHeartIconClickCountNumber("heart-count")
+    heartIconClickCountNumber("heart-count")
 })
 document.getElementById("heart-icon-8").addEventListener("click", function(){
-    getHeartIconClickCountNumber("heart-count")
+    heartIconClickCountNumber("heart-count")
 })
 document.getElementById("heart-icon-9").addEventListener("click", function(){
-    getHeartIconClickCountNumber("heart-count")
+    heartIconClickCountNumber("heart-count")
 })
 
 
@@ -422,11 +422,80 @@ document.getElementById("call-button-9").addEventListener("click", function(){
 })
 
 
-
-
-
 //Call History 
 document.getElementById("clear-button").addEventListener("click", function(){
     const callHistoryContainer = document.getElementById("call-histroy-container")
     callHistoryContainer.innerText = ""
+})
+
+
+// Copy Buttons
+function copyButtonClickCountNumber(id){
+    const copyElementNumber = parseInt(document.getElementById(id).innerText)
+    const copyCountNumber = copyElementNumber + 1;
+    document.getElementById(id).innerText = copyCountNumber
+}
+
+document.getElementById("copy-button-1").addEventListener("click", function(){
+    copyButtonClickCountNumber("copy-count")
+    alert("নম্বর কপি হয়েছে : 999")
+
+    const number = document.getElementById("number-1").innerText
+    navigator.clipboard.writeText(number)
+})
+document.getElementById("copy-button-2").addEventListener("click", function(){
+    copyButtonClickCountNumber("copy-count")
+    alert("নম্বর কপি হয়েছে : 999")
+
+    const number = document.getElementById("number-2").innerText
+    navigator.clipboard.writeText(number)
+})
+document.getElementById("copy-button-3").addEventListener("click", function(){
+    copyButtonClickCountNumber("copy-count")
+    alert("নম্বর কপি হয়েছে : 999")
+
+    const number = document.getElementById("number-3").innerText
+    navigator.clipboard.writeText(number)
+})
+document.getElementById("copy-button-4").addEventListener("click", function(){
+    copyButtonClickCountNumber("copy-count")
+    alert("নম্বর কপি হয়েছে : 1994-999999")
+
+    const number = document.getElementById("number-4").innerText
+    navigator.clipboard.writeText(number)
+})
+document.getElementById("copy-button-5").addEventListener("click", function(){
+    copyButtonClickCountNumber("copy-count")
+    alert("নম্বর কপি হয়েছে : 109")
+
+    const number = document.getElementById("number-5").innerText
+    navigator.clipboard.writeText(number)
+})
+document.getElementById("copy-button-6").addEventListener("click", function(){
+    copyButtonClickCountNumber("copy-count")
+    alert("নম্বর কপি হয়েছে : 106")
+
+    const number = document.getElementById("number-6").innerText
+    navigator.clipboard.writeText(number)
+})
+document.getElementById("copy-button-7").addEventListener("click", function(){
+    copyButtonClickCountNumber("copy-count")
+    alert("নম্বর কপি হয়েছে : 16216")
+
+    const number = document.getElementById("number-7").innerText
+    navigator.clipboard.writeText(number)
+})
+document.getElementById("copy-button-8").addEventListener("click", function(){
+    copyButtonClickCountNumber("copy-count")
+    alert("নম্বর কপি হয়েছে : 16445")
+
+    const number = document.getElementById("number-8").innerText
+    navigator.clipboard.writeText(number)
+})
+document.getElementById("copy-button-9").addEventListener("click", function(){
+    copyButtonClickCountNumber("copy-count")
+    alert("নম্বর কপি হয়েছে : 163")
+
+    const number = document.getElementById("number-9").innerText
+    navigator.clipboard.writeText(number)
 })

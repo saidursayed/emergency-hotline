@@ -15,27 +15,27 @@
 
         <header>
             
-            <nav class="px-[60px] py-6 bg-white flex justify-between items-center">
-                <div class="flex items-center gap-[10px]">
+            <nav class="sm:px-[60px] sm:py-6 p-3 bg-white flex justify-between items-center">
+                <div class="flex items-center gap-1 sm:gap-[10px]">
                     <img class="w-[50px]" src="./assets/logo.png" alt="">
                     <div>
                         <h2 class="text-[#006747] font-black">Emergency <br> Service</h2>
                     </div>
                 </div>
 
-                <div class="flex items-center gap-5">
-                    <div class="py-[11px] px-9  rounded-[50px] bg-[#41ff6b1a] flex justify-center items-center gap-[10px]">
+                <div class="flex items-center  sm:gap-5 gap-2">
+                    <div class="sm:py-[11px] py-2 sm:px-9 px-3 rounded-[50px] bg-[#41ff6b1a] flex justify-center items-center gap-[10px]">
                         <h2 id="heart-count" class="font-black">0</h2>
-                        <img class="w-[30px]" src="./assets/heart.png" alt="">
+                        <img class="sm:w-[30px] w-6" src="./assets/heart.png" alt="">
                     </div>
 
-                    <div class="py-[14px] px-5 rounded-[50px] bg-[#41ff6b1a] flex justify-center items-center gap-[10px]">
+                    <div class="sm:py-[14px] py-2 sm:px-5 px-3 rounded-[50px] bg-[#41ff6b1a] flex justify-center items-center gap-[10px]">
                         <h2 id="call-coin" class="font-black">100</h2>
                         <img class="w-[24px]" src="./assets/coin.png" alt="">
                     </div>
 
-                    <div class="py-[14px] px-9 rounded-[50px] bg-[#00A63E] flex justify-center items-center gap-[10px]">
-                        <h2 class="font-semibold text-white"><span>2</span> Copy</h2>
+                    <div class="sm:py-[14px] py-2 sm:px-9 px-3 rounded-[50px] bg-[#00A63E] flex justify-center items-center gap-[10px]">
+                        <h2 class="font-semibold text-white"><span id="copy-count">0</span> Copy</h2>
                     </div>
                 </div>
             </nav>
@@ -48,7 +48,7 @@
 
         </header>
 
-        <main>
+        <main class="hidden">
             <section class="flex justify-between gap-7 mt-12 mx-[60px] pb-[86px]">
                 <div class="w-3/4 grid grid-cols-3 gap-7">
                     <div class="p-8 bg-white rounded-xl shadow-md">
@@ -63,7 +63,7 @@
                         </div>
 
                         <div class="mt-6">
-                            <h1 class="text-[#111111] font-bold text-2xl">999</h1>
+                            <h1 id="number-1" class="text-[#111111] font-bold text-2xl">999</h1>
                             <p class="inline-block rounded-full mt-1 text-[#5C5C5C] py-[6px] px-4 bg-[#f2f2f2]">সার্বজনীন</p>
                         </div>
 
@@ -86,7 +86,7 @@
                         </div>
 
                         <div class="mt-6">
-                            <h1 class="text-[#111111] font-bold text-2xl">999</h1>
+                            <h1 id="number-2" class="text-[#111111] font-bold text-2xl">999</h1>
                             <p class="inline-block rounded-full mt-1 text-[#5C5C5C] py-[6px] px-4 bg-[#f2f2f2]">পুলিশ</p>
                         </div>
 
@@ -109,7 +109,7 @@
                         </div>
 
                         <div class="mt-6">
-                            <h1 class="text-[#111111] font-bold text-2xl">999</h1>
+                            <h1 id="number-3" class="text-[#111111] font-bold text-2xl">999</h1>
                             <p class="inline-block rounded-full mt-1 text-[#5C5C5C] py-[6px] px-4 bg-[#f2f2f2]">ফায়ার</p>
                         </div>
 
@@ -132,7 +132,7 @@
                         </div>
 
                         <div class="mt-6">
-                            <h1 class="text-[#111111] font-bold text-2xl">1994-999999</h1>
+                            <h1 id="number-4" class="text-[#111111] font-bold text-2xl">1994-999999</h1>
                             <p class="inline-block rounded-full mt-1 text-[#5C5C5C] py-[6px] px-4 bg-[#f2f2f2]">স্বাস্থ্য</p>
                         </div>
 
@@ -155,7 +155,7 @@
                         </div>
 
                         <div class="mt-6">
-                            <h1 class="text-[#111111] font-bold text-2xl">109</h1>
+                            <h1 id="number-5" class="text-[#111111] font-bold text-2xl">109</h1>
                             <p class="inline-block rounded-full mt-1 text-[#5C5C5C] py-[6px] px-4 bg-[#f2f2f2]">সহায়তা</p>
                         </div>
 
@@ -178,7 +178,7 @@
                         </div>
 
                         <div class="mt-6">
-                            <h1 class="text-[#111111] font-bold text-2xl">106</h1>
+                            <h1 id="number-6" class="text-[#111111] font-bold text-2xl">106</h1>
                             <p class="inline-block rounded-full mt-1 text-[#5C5C5C] py-[6px] px-4 bg-[#f2f2f2]">সরকারি</p>
                         </div>
 
@@ -201,7 +201,7 @@
                         </div>
 
                         <div class="mt-6">
-                            <h1 class="text-[#111111] font-bold text-2xl">16216</h1>
+                            <h1 id="number-7" class="text-[#111111] font-bold text-2xl">16216</h1>
                             <p class="inline-block rounded-full mt-1 text-[#5C5C5C] py-[6px] px-4 bg-[#f2f2f2]">বিদ্যুৎ</p>
                         </div>
 
@@ -224,7 +224,7 @@
                         </div>
 
                         <div class="mt-6">
-                            <h1 class="text-[#111111] font-bold text-2xl">16445</h1>
+                            <h1 id="number-8" class="text-[#111111] font-bold text-2xl">16445</h1>
                             <p class="inline-block rounded-full mt-1 text-[#5C5C5C] py-[6px] px-4 bg-[#f2f2f2]">এনজিও</p>
                         </div>
 
@@ -247,7 +247,7 @@
                         </div>
 
                         <div class="mt-6">
-                            <h1 class="text-[#111111] font-bold text-2xl">163</h1>
+                            <h1 id="number-9" class="text-[#111111] font-bold text-2xl">163</h1>
                             <p class="inline-block rounded-full mt-1 text-[#5C5C5C] py-[6px] px-4 bg-[#f2f2f2]">পরিবহন</p>
                         </div>
 
