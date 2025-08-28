@@ -424,6 +424,7 @@ document.getElementById("call-button-9").addEventListener("click", function(){
 
 //Call History 
 document.getElementById("clear-button").addEventListener("click", function(){
+    callHistoryData.length = 0; 
     const callHistoryContainer = document.getElementById("call-histroy-container")
     callHistoryContainer.innerText = ""
 })
