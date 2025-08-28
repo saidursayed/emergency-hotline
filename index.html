@@ -25,12 +25,12 @@
 
                 <div class="flex items-center gap-5">
                     <div class="py-[11px] px-9  rounded-[50px] bg-[#41ff6b1a] flex justify-center items-center gap-[10px]">
-                        <h2 class="font-black">0</h2>
+                        <h2 id="heart-count" class="font-black">0</h2>
                         <img class="w-[30px]" src="./assets/heart.png" alt="">
                     </div>
 
                     <div class="py-[14px] px-5 rounded-[50px] bg-[#41ff6b1a] flex justify-center items-center gap-[10px]">
-                        <h2 class="font-black">100</h2>
+                        <h2 id="call-coin" class="font-black">100</h2>
                         <img class="w-[24px]" src="./assets/coin.png" alt="">
                     </div>
 
@@ -49,12 +49,12 @@
         </header>
 
         <main>
-            <section class="flex justify-between gap-[30px] mt-12 ml-[58px] mr-[62px] pb-[86px]">
-                <div class="w-3/4 grid grid-cols-3 gap-[30px]">
+            <section class="flex justify-between gap-7 mt-12 mx-[60px] pb-[86px]">
+                <div class="w-3/4 grid grid-cols-3 gap-7">
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
                             <img class="w-[60px]" src="./assets/emergency.png" alt="">
-                            <i class="fa-regular fa-heart text-xl"></i>
+                            <i id="heart-icon-1" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
                         <div class="mt-4">
@@ -68,16 +68,16 @@
                         </div>
 
                         <div class="mt-6 flex gap-2">
-                            <button class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button id="copy-button-1" class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                            <button class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="call-button-1" class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
                             <img class="w-[60px]" src="./assets/police.png" alt="">
-                            <i class="fa-regular fa-heart text-xl"></i>
+                            <i id="heart-icon-2" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
                         <div class="mt-4">
@@ -91,16 +91,16 @@
                         </div>
 
                         <div class="mt-6 flex gap-2">
-                            <button class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button id="copy-button-2" class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                            <button class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="call-button-2" class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
                             <img class="w-[60px]" src="./assets/fire-service.png" alt="">
-                            <i class="fa-regular fa-heart text-xl"></i>
+                            <i id="heart-icon-3" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
                         <div class="mt-4">
@@ -114,16 +114,16 @@
                         </div>
 
                         <div class="mt-6 flex gap-2">
-                            <button class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button id="copy-button-3" class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                            <button class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="call-button-3" class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
                             <img class="w-[60px]" src="./assets/ambulance.png" alt="">
-                            <i class="fa-regular fa-heart text-xl"></i>
+                            <i id="heart-icon-4" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
                         <div class="mt-4">
@@ -137,16 +137,16 @@
                         </div>
 
                         <div class="mt-6 flex gap-2">
-                            <button class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button id="copy-button-4" class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                            <button class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="call-button-4" class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
                             <img class="w-[60px]" src="./assets/emergency.png" alt="">
-                            <i class="fa-regular fa-heart text-xl"></i>
+                            <i id="heart-icon-5" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
                         <div class="mt-4">
@@ -160,16 +160,16 @@
                         </div>
 
                         <div class="mt-6 flex gap-2">
-                            <button class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button id="copy-button-5" class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                            <button class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="call-button-5" class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
                             <img class="w-[60px]" src="./assets/emergency.png" alt="">
-                            <i class="fa-regular fa-heart text-xl"></i>
+                            <i id="heart-icon-6" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
                         <div class="mt-4">
@@ -183,16 +183,16 @@
                         </div>
 
                         <div class="mt-6 flex gap-2">
-                            <button class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button id="copy-button-6" class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                            <button class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="call-button-6" class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
                             <img class="w-[60px]" src="./assets/emergency.png" alt="">
-                            <i class="fa-regular fa-heart text-xl"></i>
+                            <i id="heart-icon-7" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
                         <div class="mt-4">
@@ -206,16 +206,16 @@
                         </div>
 
                         <div class="mt-6 flex gap-2">
-                            <button class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button id="copy-button-7" class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                            <button class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="call-button-7" class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
                             <img class="w-[60px]" src="./assets/brac.png" alt="">
-                            <i class="fa-regular fa-heart text-xl"></i>
+                            <i id="heart-icon-8" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
                         <div class="mt-4">
@@ -229,16 +229,16 @@
                         </div>
 
                         <div class="mt-6 flex gap-2">
-                            <button class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button id="copy-button-8" class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                            <button class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="call-button-8" class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
                             <img class="w-[60px]" src="./assets/Bangladesh-Railway.png" alt="">
-                            <i class="fa-regular fa-heart text-xl"></i>
+                            <i id="heart-icon-9" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
                         <div class="mt-4">
@@ -252,15 +252,27 @@
                         </div>
 
                         <div class="mt-6 flex gap-2">
-                            <button class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button id="copy-button-9" class="w-1/2 btn btn-neutral btn-outline border-1 border-[#d4d6d5]"><i class="fa-regular fa-copy"></i>Copy</button>
 
-                            <button class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button id="call-button-9" class="w-1/2 btn text-white bg-[#00A63E] hover:bg-gray-400"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="w-1/4 border-2 border-green-500 min-h-[500px]">
+                <div class="w-1/4 p-6 bg-white rounded-xl shadow-md">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="flex items-center gap-1">
+                            <i class="fa-regular fa-clock text-[#5C5C5C] text-xl"></i>
+                            <p class="font-medium text-lg text-[#111111]">Call History</p>
+                        </div>
+                        <div>
+                            <button id="clear-button" class="btn text-white bg-[#00A63E] hover:bg-gray-400 px-6 rounded-full">Clear</button>
+                        </div>
+                    </div>
 
+                    <div id="call-histroy-container">
+                        
+                    </div>
                 </div>
             </section>
         </main>
