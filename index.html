@@ -10,50 +10,54 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <!-- font awesome cdn -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- css link -->
+        <link rel="stylesheet" href="tailwind.init.css">
     </head>
-    <body class="bg-[#f5fff6]">
+    <body class="bg-[#f5fff6] font-hind-madurai">
 
         <header>
             
-            <nav class="sm:px-[60px] sm:py-6 p-3 bg-white flex  justify-between items-center sm:gap-0 gap-2">
-                <div class="flex items-center gap-1 sm:gap-[10px]">
+            <nav class="fixed top-0 left-0 w-full md:px-[60px] md:py-6 p-3 bg-white flex  justify-between items-center md:gap-0 gap-2">
+                <div class="flex items-center gap-1 md:gap-[10px]">
                     <img class="w-[50px]" src="./assets/logo.png" alt="">
                     <div>
                         <h2 class="text-[#006747] font-black">Emergency <br> Service</h2>
                     </div>
                 </div>
 
-                <div class="flex items-center  sm:gap-5 gap-1">
-                    <div class="sm:py-[11px] sm:px-9 p-2 rounded-[50px] bg-[#41ff6b1a] flex justify-center items-center sm:gap-[10px] gap-1">
+                <div class="flex items-center md:gap-5 gap-1">
+                    <div class="md:py-[11px] md:px-9 p-2 rounded-[50px] bg-[#41ff6b1a] flex justify-center items-center md:gap-[10px] gap-1">
                         <h2 id="heart-count" class="font-black">0</h2>
-                        <img class="sm:w-[30px] w-6" src="./assets/heart.png" alt="">
+                        <img class="md:w-[30px] w-6" src="./assets/heart.png" alt="">
                     </div>
 
-                    <div class="sm:py-[14px] sm:px-5 p-2 rounded-[50px] bg-[#41ff6b1a] flex justify-center items-center sm:gap-[10px] gap-1">
+                    <div class="md:py-[14px] md:px-5 p-2 rounded-[50px] bg-[#41ff6b1a] flex justify-center items-center md:gap-[10px] gap-1">
                         <h2 id="call-coin" class="font-black">100</h2>
                         <img class="w-[24px]" src="./assets/coin.png" alt="">
                     </div>
 
-                    <div class="sm:py-[14px] sm:px-9 p-2 rounded-[50px] bg-[#00A63E] flex justify-center items-center sm:gap-[10px] gap-1">
+                    <div class="md:py-[14px] md:px-9 p-2 rounded-[50px] bg-[#00A63E] flex justify-center items-center md:gap-[10px] gap-1">
                         <h2 class="font-semibold text-white"><span id="copy-count">0</span> Copy</h2>
                     </div>
                 </div>
             </nav>
 
-            <div class="py-5 px-[60px] text-center bg-[linear-gradient(90deg,#013122,#006747_50%,#013223_100%)]">
+            <div class="md:mt-[100px] mt-[75px] py-5 px-[60px] text-center bg-[linear-gradient(90deg,#013122,#006747_50%,#013223_100%)]">
                 <img class="mx-auto w-[92px]" src="./assets/logo-dark.png" alt="">
-                <h1 class="font-semibold text-2xl sm:text-[40px] text-white mt-3">জরুরি সেবা ডিরেক্টরি</h1>
-                <p class="font-semibold text-base sm:text-xl text-white mt-3">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+                <h1 class="font-semibold text-2xl md:text-[40px] text-white mt-3">জরুরি সেবা ডিরেক্টরি</h1>
+                <p class="font-semibold text-base md:text-xl text-white mt-3">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
             </div>
 
         </header>
 
         <main>
-            <section class="flex flex-col-reverse sm:flex-row justify-between sm:gap-7 gap-6 sm:mt-12 mt-7 sm:mx-[60px] mx-7 sm:pb-[86px] pb-12">
-                <div class="sm:w-3/4 w-full grid grid-cols-1 sm:grid-cols-3 sm:gap-7 gap-5">
+            <section class="flex flex-col-reverse md:flex-row justify-between md:gap-7 gap-6 md:mt-12 mt-7 md:mx-[60px] mx-7 md:pb-[86px] pb-12">
+                <div class="md:w-3/4 w-full grid grid-cols-1 md:grid-cols-3 md:gap-7 gap-5">
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
-                            <img class="w-[60px]" src="./assets/emergency.png" alt="">
+                            <div class="p-[14px] rounded-2xl bg-[#ffe3e2]">
+                                <img class="w-8" src="./assets/emergency.png" alt="">
+                            </div>
                             <i id="heart-icon-1" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
@@ -76,7 +80,9 @@
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
-                            <img class="w-[60px]" src="./assets/police.png" alt="">
+                            <div class="p-[14px] rounded-2xl bg-[#dfefff]">
+                                <img class="w-8" src="./assets/police.png" alt="">
+                            </div>
                             <i id="heart-icon-2" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
@@ -99,7 +105,9 @@
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
-                            <img class="w-[60px]" src="./assets/fire-service.png" alt="">
+                            <div class="p-[14px] rounded-2xl bg-[#ffe3e2]">
+                                <img class="w-8" src="./assets/fire-service.png" alt="">
+                            </div>
                             <i id="heart-icon-3" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
@@ -122,7 +130,9 @@
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
-                            <img class="w-[60px]" src="./assets/ambulance.png" alt="">
+                            <div class="p-[14px] rounded-2xl bg-[#ffe3e2]">
+                                <img class="w-8" src="./assets/ambulance.png" alt="">
+                            </div>
                             <i id="heart-icon-4" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
@@ -145,7 +155,9 @@
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
-                            <img class="w-[60px]" src="./assets/emergency.png" alt="">
+                            <div class="p-[14px] rounded-2xl bg-[#ffe3e2]">
+                                <img class="w-8" src="./assets/emergency.png" alt="">
+                            </div>
                             <i id="heart-icon-5" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
@@ -168,7 +180,9 @@
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
-                            <img class="w-[60px]" src="./assets/emergency.png" alt="">
+                            <div class="p-[14px] rounded-2xl bg-[#ffe3e2]">
+                                <img class="w-8" src="./assets/emergency.png" alt="">
+                            </div>
                             <i id="heart-icon-6" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
@@ -191,7 +205,9 @@
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
-                            <img class="w-[60px]" src="./assets/emergency.png" alt="">
+                            <div class="p-[14px] rounded-2xl bg-[#ffe3e2]">
+                                <img class="w-8" src="./assets/emergency.png" alt="">
+                            </div>
                             <i id="heart-icon-7" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
@@ -214,7 +230,9 @@
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
-                            <img class="w-[60px]" src="./assets/brac.png" alt="">
+                            <div class="p-[14px] rounded-2xl bg-[#ffe3e2]">
+                                <img class="w-8" src="./assets/brac.png" alt="">
+                            </div>
                             <i id="heart-icon-8" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
@@ -237,7 +255,9 @@
 
                     <div class="p-8 bg-white rounded-xl shadow-md">
                         <div class="flex justify-between items-center">
-                            <img class="w-[60px]" src="./assets/Bangladesh-Railway.png" alt="">
+                            <div class="p-[14px] rounded-2xl bg-[#ffe3e2]">
+                                <img class="w-8" src="./assets/Bangladesh-Railway.png" alt="">
+                            </div>
                             <i id="heart-icon-9" class="fa-regular fa-heart text-xl"></i>
                         </div>
 
@@ -259,7 +279,7 @@
                     </div>
                 </div>
 
-                <div class="sm:w-1/4 w-full p-6 bg-white rounded-xl shadow-md">
+                <div class="md:w-1/4 w-full p-6 bg-white rounded-xl shadow-md">
                     <div class="flex justify-between items-center mb-4">
                         <div class="flex items-center gap-1">
                             <i class="fa-regular fa-clock text-[#5C5C5C] text-xl"></i>
